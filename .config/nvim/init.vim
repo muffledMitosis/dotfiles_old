@@ -22,6 +22,8 @@ Plug 'mattn/emmet-vim'
 
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'https://github.com/tpope/vim-fugitive.git'
+
+Plug 'stevearc/vim-arduino'
 call plug#end()
 
 set termguicolors
@@ -194,6 +196,14 @@ nnoremap <silent><leader>6 <Cmd>BufferLineGoToBuffer 6<CR>
 nnoremap <silent><leader>7 <Cmd>BufferLineGoToBuffer 7<CR>
 nnoremap <silent><leader>8 <Cmd>BufferLineGoToBuffer 8<CR>
 nnoremap <silent><leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
+
+" vim-arduino keybinds
+nnoremap <buffer> <leader>aa <cmd>ArduinoAttach<CR>
+nnoremap <buffer> <leader>am <cmd>ArduinoVerify<CR>
+nnoremap <buffer> <leader>au <cmd>ArduinoUpload<CR>
+nnoremap <buffer> <leader>ad <cmd>ArduinoUploadAndSerial<CR>
+nnoremap <buffer> <leader>ab <cmd>ArduinoChooseBoard<CR>
+nnoremap <buffer> <leader>ap <cmd>ArduinoChooseProgrammer<CR>
 
 let g:closetag_filenames = '*js, *.html,*.xhtml,*.phtml'
 
