@@ -48,6 +48,12 @@ awful.key({modkey, 'Shift'}, 'h', function() awful.client.swap.bydirection('left
           {description = 'Change swap left', group = 'client'}),
 awful.key({modkey, 'Shift'}, 'l', function() awful.client.swap.bydirection('right') end,
           {description = 'Change swap right', group = 'client'}),
+awful.key({ modkey, "Control" }, "h",     function () awful.tag.incncol( 1, nil, true)    end,
+              {description = "increase the number of columns", group = "layout"}),
+awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol( -1, nil, true)    end,
+              {description = "decrease the number of columns", group = "layout"}),
+awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ,
+              {description = "toggle floating", group = "client"}),
 awful.key({modkey}, 'd', function()
     local flag = false
     for _, c in ipairs(mouse.screen.selected_tag:clients()) do
