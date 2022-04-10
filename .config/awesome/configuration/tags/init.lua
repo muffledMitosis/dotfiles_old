@@ -31,6 +31,12 @@ local tags = {
       type = 'work',
       defaultApp = apps.default.rofi,
       screen = 1
+    },
+    {
+      icon = icons.console,
+      type = 'console',
+      defaultApp = apps.default.rofi,
+      screen = 1
     }
 }
 
