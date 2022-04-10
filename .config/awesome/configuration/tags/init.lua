@@ -20,17 +20,18 @@ local tags = {
         defaultApp = apps.default.files,
         screen = 1
     }, {
-        icon = icons.console,
-        type = 'console',
-        defaultApp = apps.default.terminal,
-        screen = 1
-    }, {
         icon = icons.social,
         type = 'social',
         defaultApp = apps.default.social,
         screen = 1
     },
-    {icon = icons.lab, type = 'any', defaultApp = apps.default.rofi, screen = 1}
+    {icon = icons.lab, type = 'any', defaultApp = apps.default.rofi, screen = 1},
+    {
+      icon = icons.work,
+      type = 'work',
+      defaultApp = apps.default.rofi,
+      screen = 1
+    }
 }
 
 awful.layout.layouts = {

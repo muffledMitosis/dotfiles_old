@@ -11,6 +11,7 @@ return {
     music = dir .. '/music.svg',
     game = dir .. '/google-controller.svg',
     lab = dir .. '/flask.svg',
+    work = dir .. '/work.svg',
     -- others
     menu = dir .. '/dashboard.svg',
     close = dir .. '/close.svg',
