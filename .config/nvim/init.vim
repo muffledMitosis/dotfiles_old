@@ -5,8 +5,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-media-files.nvim'
 
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
@@ -37,6 +40,7 @@ require("bufferline").setup{
 }
 require('Comment').setup()
 require('gitsigns').setup()
+require('telescope').load_extension('media_files')
 EOF
 
 " TREESITTER CONFIG 
@@ -58,7 +62,9 @@ EOF
 
 syntax on
 set number
+set softtabstop=2 
 set tabstop=2 
+set expandtab
 set shiftwidth=2
 set relativenumber
 set mouse=a
@@ -74,7 +80,8 @@ let g:coc_global_extensions = [
 		\'coc-html',
 		\'coc-json',
 		\'coc-prettier',
-		\'coc-tsserver'
+		\'coc-tsserver',
+		\'coc-pyright'
 		\]
 
 inoremap <silent><expr> <TAB>
