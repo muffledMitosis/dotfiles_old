@@ -36,6 +36,7 @@ return {
         'scream-start', -- scream audio sink
         'numlockx on', -- enable numlock
         '/usr/lib/xfce-polkit/xfce-polkit & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
-        'blueman-tray' -- bluetooth tray
+        'blueman-tray', -- bluetooth tray
+        'aw-qt'
     }
 }
