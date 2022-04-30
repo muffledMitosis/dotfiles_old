@@ -99,6 +99,8 @@ awful.key({modkey}, 'c', function() awful.util.spawn(apps.default.editor) end,
           {description = 'open a text/code editor', group = 'launcher'}),
 awful.key({modkey}, 'b', function() awful.util.spawn(apps.default.browser) end,
           {description = 'open a browser', group = 'launcher'}),
+awful.key({modkey}, 'o', function() awful.util.spawn(apps.default.greenclip) end,
+          {description = 'Open Greenclip in roif', group = 'launcher'}),
 -- Open private browser/brave
 awful.key({modkey}, 'p',
           function() awful.util.spawn_with_shell('brave-browser') end,
