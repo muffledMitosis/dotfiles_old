@@ -21,7 +21,8 @@ return {
         social = 'env discord',
         game = rofi_command,
         files = 'thunar',
-        music = rofi_command
+        music = rofi_command,
+        greenclip = 'rofi -modi "clipboard:greenclip print" -show clipboard -run-command \'{cmd}\''
     },
     -- List of apps to start once on start-up
     run_on_start_up = {
@@ -37,6 +38,8 @@ return {
         'numlockx on', -- enable numlock
         '/usr/lib/xfce-polkit/xfce-polkit & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
         'blueman-tray', -- bluetooth tray
-        'aw-qt'
+        'aw-qt',
+        'redshift-qt -l 6.829107:79.909405',
+        'greenclip daemon'
     }
 }
