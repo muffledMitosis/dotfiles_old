@@ -29,7 +29,7 @@ return {
         -- Add applications that need to be killed between reloads
         -- to avoid multipled instances, inside the autostart script
         '~/.config/awesome/configuration/autostart', -- Spawn "dirty" apps that can linger between sessions
-        'compton',
+        'picom --experimental-backend',
         'nitrogen --restore',
         'nm-applet --indicator', -- wifi
         'xfce4-power-manager', -- Power manager
