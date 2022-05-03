@@ -10,9 +10,9 @@ return {
         rofi = rofi_command,
         lock = 'i3lock-fancy',
         quake = 'termite',
-        screenshot = '~/.config/awesome/configuration/utils/screenshot -m',
-        region_screenshot = '~/.config/awesome/configuration/utils/screenshot -r',
-        delayed_screenshot = '~/.config/awesome/configuration/utils/screenshot --delayed -r',
+        screenshot = 'flameshot gui',
+        region_screenshot = 'flameshot gui',
+        delayed_screenshot = 'flameshot gui',
 
         -- Editing these also edits the default program
         -- associated with each tag/workspace
