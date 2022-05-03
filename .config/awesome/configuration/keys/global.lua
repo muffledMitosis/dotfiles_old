@@ -79,8 +79,8 @@ end, {description = 'Switch to previous window', group = 'client'}),
 -- Programms
 awful.key({modkey}, 'l', function() awful.spawn(apps.default.lock) end,
           {description = 'Lock the screen', group = 'awesome'}),
-awful.key({'Control', 'Shift'}, 'Print', function()
-    awful.util.spawn_with_shell(apps.default.delayed_screenshot)
+awful.key({'Control', 'Shift'}, 'p', function()
+    awful.util.spawn_with_shell(apps.default.screenshot)
 end, {
     description = 'Mark an area and screenshot it (clipboard)',
     group = 'screenshots (clipboard)'
