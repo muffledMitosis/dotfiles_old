@@ -12,6 +12,7 @@ return {
     game = dir .. '/google-controller.svg',
     lab = dir .. '/flask.svg',
     work = dir .. '/work.svg',
+    home = dir .. '/home.svg',
     -- others
     menu = dir .. '/dashboard.svg',
     close = dir .. '/close.svg',
