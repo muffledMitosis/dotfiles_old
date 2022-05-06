@@ -13,6 +13,7 @@ return {
     lab = dir .. '/flask.svg',
     work = dir .. '/work.svg',
     home = dir .. '/home.svg',
+    study = dir .. '/study.svg',
     -- others
     menu = dir .. '/dashboard.svg',
     close = dir .. '/close.svg',

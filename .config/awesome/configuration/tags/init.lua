@@ -17,19 +17,36 @@ local tags = {
         defaultApp = apps.default.browser,
         layout = awful.layout.suit.tile,
         screen = 1
-    }, {
+    },
+    {
+      icon = icons.study,
+      type = 'study',
+      layout = awful.layout.suit.floating,
+      defaultApp = apps.default.rofi,
+      screen = 1
+    },
+    {
         icon = icons.code,
         type = 'code',
         defaultApp = apps.default.editor,
         layout = awful.layout.suit.tile,
         screen = 1
-    }, {
-        icon = icons.folder,
-        type = 'files',
-        defaultApp = apps.default.files,
-        layout = awful.layout.suit.tile,
-        screen = 1
-    }, {
+    },
+    {
+      icon = icons.work,
+      type = 'work',
+      defaultApp = apps.default.rofi,
+      layout = awful.layout.suit.tile,
+      screen = 1
+    },
+    -- {
+    --     icon = icons.folder,
+    --     type = 'files',
+    --     defaultApp = apps.default.files,
+    --     layout = awful.layout.suit.tile,
+    --     screen = 1
+    -- }, 
+    {
         icon = icons.social,
         type = 'social',
         defaultApp = apps.default.social,
@@ -43,20 +60,13 @@ local tags = {
       layout = awful.layout.suit.tile,
       screen = 1
     },
-    {
-      icon = icons.work,
-      type = 'work',
-      defaultApp = apps.default.rofi,
-      layout = awful.layout.suit.tile,
-      screen = 1
-    },
-    {
-      icon = icons.console,
-      type = 'console',
-      defaultApp = apps.default.rofi,
-      layout = awful.layout.suit.tile,
-      screen = 1
-    }
+    -- {
+    --   icon = icons.console,
+    --   type = 'console',
+    --   defaultApp = apps.default.rofi,
+    --   layout = awful.layout.suit.tile,
+    --   screen = 1
+    -- }
 }
 
 awful.layout.layouts = {
