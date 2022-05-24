@@ -8,6 +8,7 @@ return {
     default = {
         terminal = 'env alacritty',
         rofi = rofi_command,
+        rofi_games = '/home/zeux/.config/rofi/scripts/rofi-wrapper.sh games',
         lock = 'i3lock-fancy',
         quake = 'termite',
         screenshot = 'flameshot gui',
