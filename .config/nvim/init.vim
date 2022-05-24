@@ -1,5 +1,8 @@
 call plug#begin()
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'Domeee/mosel.nvim'
+Plug 'sainnhe/gruvbox-material'
+
 Plug 'vim-airline/vim-airline'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -29,10 +32,14 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'stevearc/vim-arduino'
 
 Plug 's1n7ax/nvim-terminal'
+
+" Snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 call plug#end()
 
 set termguicolors
-colorscheme palenight
+colorscheme gruvbox-material
 
 lua << EOF
 vim.o.hidden = true
@@ -138,19 +145,6 @@ let g:coc_global_extensions = [
 		\'coc-lua',
 		\'coc-pyright'
 		\]
-
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? coc#_select_confirm() :
-      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-let g:coc_snippet_next = '<tab>'
 
 " Rename symbol
 nmap <leader>rn <Plug>(coc-rename)
@@ -279,3 +273,17 @@ let g:closetag_filenames = '*js, *.html,*.xhtml,*.phtml'
 " Shortcut for closing tags, default is '>'
 "
 let g:closetag_shortcut = '>'
+
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? coc#_select_confirm() :
+      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+let g:coc_snippet_next = '<tab>'
+
