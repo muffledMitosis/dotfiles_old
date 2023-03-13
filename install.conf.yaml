@@ -7,7 +7,8 @@
 
 - create:
     - ~/.config/i3
+    - ~/.config/alacritty
 
 - link:
     ~/.config/i3/config: i3/config
-
+    ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml
