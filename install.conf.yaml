@@ -1,0 +1,13 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~', '~/.config']
+
+- create:
+    - ~/.config/i3
+
+- link:
+    ~/.config/i3/config: i3/config
+
