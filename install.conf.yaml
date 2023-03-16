@@ -7,11 +7,13 @@
 
 - create:
     - ~/.config/i3
+    - ~/.config/i3status
     - ~/.config/alacritty
     - ~/.config/fontconfig
 
 - link:
     ~/.config/i3/config: i3/config
+    ~/.config/i3status/config: i3status/config
     ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml
     ~/.Xresources: .Xresources
     ~/.config/fontconfig/fonts.conf: fontconfig/fonts.conf
