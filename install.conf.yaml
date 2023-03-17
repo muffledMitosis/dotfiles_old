@@ -21,4 +21,4 @@
     ~/.config/fontconfig/fonts.conf: fontconfig/fonts.conf
     ~/.bashrc: .bashrc
     ~/.fonts.conf: .fonts.conf
-    ~/.config/nvim/: nvim/*
+    ~/.config/nvim: nvim/**
