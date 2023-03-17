@@ -2,6 +2,7 @@
     link:
       create: true
       relink: true
+      glob: true
 
 - clean: ['~', '~/.config']
 
@@ -10,6 +11,7 @@
     - ~/.config/i3status
     - ~/.config/alacritty
     - ~/.config/fontconfig
+    - ~/.config/nvim
 
 - link:
     ~/.config/i3/config: i3/config
@@ -19,3 +21,4 @@
     ~/.config/fontconfig/fonts.conf: fontconfig/fonts.conf
     ~/.bashrc: .bashrc
     ~/.fonts.conf: .fonts.conf
+    ~/.config/nvim/: nvim/*
