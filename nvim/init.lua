@@ -1,3 +1,0 @@
-require("muffledMitosis")
-
-print("hello")
