@@ -44,7 +44,7 @@ floating_modifier $mod
 bindsym $mod+Return exec cool-retro-term
 
 # start alacritty
-bindsym $mod+t exec alacritty
+bindsym $mod+t exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
