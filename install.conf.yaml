@@ -30,3 +30,10 @@
     ~/.Xresources: home/.Xresources
     ~/.fonts.conf: home/.fonts.conf
     ~/.rtorren.rc: home/.rtorrent.rc
+
+- shell:
+    - command: "~/dotfiles/exec/progs.sh" 
+      description: "Running program install script"
+      stdout: true
+      stdin: true
+      stderr: true

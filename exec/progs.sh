@@ -10,9 +10,11 @@
 #
 # # TODO: Delete files when done
 
+# List of programs to install using apt
 programs=(
   "cool-retro-term"
   "kitty"
 )
 
+# Install list of programs
 sudo apt install ${programs[@]}
