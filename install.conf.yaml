@@ -12,6 +12,7 @@
     - ~/.config/alacritty
     - ~/.config/fontconfig
     - ~/.config/nvim
+    - ~/rtorrent
 
 - link:
     ~/.config/i3/config: i3/config
@@ -22,3 +23,4 @@
     ~/.bashrc: .bashrc
     ~/.fonts.conf: .fonts.conf
     ~/.config/nvim: nvim/**
+    ~/.rtorren.rc: .rtorrent.rc
