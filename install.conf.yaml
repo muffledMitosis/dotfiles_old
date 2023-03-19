@@ -12,15 +12,21 @@
     - ~/.config/alacritty
     - ~/.config/fontconfig
     - ~/.config/nvim
+    - ~/.config/kitty
+    - ~/.local/share/fonts/FiraCode
+    - ~/.local/share/fonts/FiraCodeNerd
     - ~/rtorrent
 
 - link:
     ~/.config/i3/config: config/i3/config
     ~/.config/i3status/config: config/i3status/config
     ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
-    ~/.Xresources: home/.Xresources
     ~/.config/fontconfig/fonts.conf: config/fontconfig/fonts.conf
-    ~/.bashrc: home/.bashrc
-    ~/.fonts.conf: home/.fonts.conf
     ~/.config/nvim: config/nvim/**
+    ~/.config/kitty/kitty.conf: config/kitty/kitty.conf
+    ~/.local/share/fonts/FiraCode: fonts/FiraCode/**
+    ~/.local/share/fonts/FiraCodeNerd: fonts/FiraCodeNerd/**
+    ~/.bashrc: home/.bashrc
+    ~/.Xresources: home/.Xresources
+    ~/.fonts.conf: home/.fonts.conf
     ~/.rtorren.rc: home/.rtorrent.rc
