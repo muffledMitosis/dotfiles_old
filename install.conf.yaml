@@ -15,12 +15,12 @@
     - ~/rtorrent
 
 - link:
-    ~/.config/i3/config: .config/i3/config
-    ~/.config/i3status/config: .config/i3status/config
-    ~/.config/alacritty/alacritty.yml: .config/alacritty/alacritty.yml
-    ~/.Xresources: .Xresources
-    ~/.config/fontconfig/fonts.conf: .config/fontconfig/fonts.conf
-    ~/.bashrc: .bashrc
-    ~/.fonts.conf: .fonts.conf
-    ~/.config/nvim: .config/nvim/**
-    ~/.rtorren.rc: .rtorrent.rc
+    ~/.config/i3/config: config/i3/config
+    ~/.config/i3status/config: config/i3status/config
+    ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
+    ~/.Xresources: home/.Xresources
+    ~/.config/fontconfig/fonts.conf: config/fontconfig/fonts.conf
+    ~/.bashrc: home/.bashrc
+    ~/.fonts.conf: home/.fonts.conf
+    ~/.config/nvim: config/nvim/**
+    ~/.rtorren.rc: home/.rtorrent.rc
