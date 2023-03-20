@@ -14,6 +14,11 @@
 programs=(
   "cool-retro-term"
   "kitty"
+  "fzf"
+  "tmux"
+  "ripgrep"
+  "xclip"
+  "calibre"             # Library manager
 )
 
 # Install list of programs
