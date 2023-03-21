@@ -30,6 +30,7 @@
     ~/.Xresources: home/.Xresources
     ~/.fonts.conf: home/.fonts.conf
     ~/.rtorren.rc: home/.rtorrent.rc
+    ~/.tmux.conf: home/.tmux.conf
 
 - shell:
     - command: "~/dotfiles/exec/progs.sh" 
