@@ -1,14 +1,9 @@
 #!/bin/bash
 
-# # Assumes system to be Debian 11
-# wezterm_url="https://github.com/wez/wezterm/releases/download/20221119-145034-49b9839f/wezterm-20221119-145034-49b9839f.Debian11.deb"
-# wezterm_file_name="wezterm.deb11.deb"
-#
-# # wezterm -> A terminal emulator with ligiture support
-# wget $wezterm_url -O $wezterm_file_name
-# sudo dpkg -i $wezterm_file_name
-#
-# # TODO: Delete files when done
+# Function to figure out which linux distro
+whichOS () {
+  return $(cat /etc/os-release | grep -q $1);
+}
 
 # List of programs to install using apt
 programs=(
@@ -19,7 +14,16 @@ programs=(
   "ripgrep"
   "xclip"
   "calibre"             # Library manager
+  "doxygen"
+  "swig"
 )
 
 # Install list of programs
-sudo apt install ${programs[@]}
+if $(whichOS "debian"); then
+  sudo apt install ${programs[@]}
+elif $(whichOS "arch"); then
+  sudo pacman -S ${programs[@]}
+else
+  echo "OS NOT SUPPORTD BOI"
+fi
+
