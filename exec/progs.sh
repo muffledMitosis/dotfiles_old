@@ -16,6 +16,7 @@ programs=(
   "calibre"             # Library manager
   "doxygen"
   "swig"
+  "i3"
 )
 
 # Install list of programs
