@@ -1,0 +1,18 @@
+{
+    "copyCmds": {
+        "login": {
+            ".login.username": [
+                "echo \"$value\" | xclip -i -selection clipboard"
+            ],
+            ".login.password": [
+                "echo \"$value\" | xclip -i -selection primary"
+            ]
+        },
+        "securenote": {},
+        "card": {},
+        "identity": {}
+    },
+    "dmenuOpts": "-i -l 10",
+    "editCmd": "xterm -e nano",
+    "sessionKeyFile": "/home/meeth/.cache/bwsession"
+}

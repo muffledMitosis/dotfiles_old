@@ -8,6 +8,7 @@
 
 - create:
     - ~/.config/i3
+    - ~/.config/dmenu_bw
     - ~/.config/i3status
     - ~/.config/alacritty
     - ~/.config/fontconfig
@@ -19,6 +20,7 @@
 
 - link:
     ~/.config/i3/config: config/i3/config
+    ~/.config/dmenu_bw/config.json: config/dmenu_bw/config.json
     ~/.config/i3status/config: config/i3status/config
     ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
     ~/.config/fontconfig/fonts.conf: config/fontconfig/fonts.conf
@@ -27,6 +29,7 @@
     ~/.local/share/fonts/FiraCode: fonts/FiraCode/**
     ~/.local/share/fonts/FiraCodeNerd: fonts/FiraCodeNerd/**
     ~/.bashrc: home/.bashrc
+    ~/.alias: home/.alias
     ~/.Xresources: home/.Xresources
     ~/.fonts.conf: home/.fonts.conf
     ~/.rtorren.rc: home/.rtorrent.rc
