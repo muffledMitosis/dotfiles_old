@@ -1,0 +1,4 @@
+alias ls='ls --color=always'
+alias yay="yay --color=always"
+alias ll="ls -lah"
+alias grep='grep --color=always'
