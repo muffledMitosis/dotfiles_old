@@ -33,6 +33,8 @@ programs_arch=(
   "spotify"
   "yad"
   "bitwarden-cli"
+  "ttf-dejavu"
+  "noto-fonts"
 )
 
 # Install list of programs
