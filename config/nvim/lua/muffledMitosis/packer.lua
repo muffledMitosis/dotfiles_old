@@ -11,7 +11,12 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
+
+  -- Colors
   use({ 'rose-pine/neovim', as = 'rose-pine' })
+  use { "catppuccin/nvim", as = "catppuccin" }
+  use {"morhetz/gruvbox", as = "gruvbox"}
+
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
   use('tpope/vim-fugitive')
@@ -41,4 +46,5 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-tree.lua'
   use 'numToStr/Comment.nvim'
   use 'windwp/nvim-ts-autotag'
+  use {'jdhao/better-escape.vim', event = 'InsertEnter'}
 end)
