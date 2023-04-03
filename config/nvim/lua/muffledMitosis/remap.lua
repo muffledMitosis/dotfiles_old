@@ -15,3 +15,5 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
 
 vim.keymap.set("n", "<leader>t", vim.cmd.NvimTreeToggle)
+
+vim.keymap.set("n", "<leader>cf", ':!rm $(find . -not -name "*.tex" -not -name "*.pdf" -not -type d)<enter>')
