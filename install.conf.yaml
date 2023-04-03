@@ -14,11 +14,14 @@
     - ~/.config/fontconfig
     - ~/.config/nvim
     - ~/.config/kitty
+    - ~/.config/zathura
     - ~/.local/share/fonts/FiraCode
     - ~/.local/share/fonts/FiraCodeNerd
     - ~/rtorrent
 
 - link:
+    ~/.config/zathura/zathurarc: config/zathura/zathurarc
+    ~/.config/zathura/LICENSE: config/zathura/LICENSE
     ~/.config/i3/config: config/i3/config
     ~/.config/dmenu_bw/config.json: config/dmenu_bw/config.json
     ~/.config/i3status/config: config/i3status/config
