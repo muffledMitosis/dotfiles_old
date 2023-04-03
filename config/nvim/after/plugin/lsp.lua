@@ -1,5 +1,9 @@
+-- NVIM-CMP
+
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
+
+require('luasnip.loaders.from_vscode').lazy_load()
 
 cmp.setup({
   sources = {
@@ -13,6 +17,8 @@ cmp.setup({
     ['<C-b>'] = cmp_action.luasnip_jump_backward(),
   }
 })
+
+-- LSP ZERO
 
 local lsp = require('lsp-zero').preset({})
 
@@ -30,7 +36,7 @@ lsp.ensure_installed({
   'bashls',
   'dockerls',
   'jsonls',
-  'ltex',
+  -- 'ltex',
   'remark_ls',
   'opencl_ls',
   'sqlls',

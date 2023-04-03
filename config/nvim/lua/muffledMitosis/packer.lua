@@ -47,4 +47,5 @@ return require('packer').startup(function(use)
   use 'numToStr/Comment.nvim'
   use 'windwp/nvim-ts-autotag'
   use {'jdhao/better-escape.vim', event = 'InsertEnter'}
+  use 'lervag/vimtex'
 end)
